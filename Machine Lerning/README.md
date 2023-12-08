@@ -1,43 +1,43 @@
-# РњР°С€РёРЅРЅРѕРµ РѕР±СѓС‡РµРЅРёРµ
+# Машинное обучение
 
-## Р РµСЃСѓСЂСЃС‹
-[Р’РєР°С‚С‹РІР°РµРјСЃСЏ РІ Machine Learning СЃ РЅСѓР»СЏ Р·Р° РЅРѕР»СЊ СЂСѓР±Р»РµР№: С‡С‚Рѕ, РіРґРµ, РІ РєР°РєРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РёР·СѓС‡РёС‚СЊ](https://habr.com/ru/articles/774844/). РљСЂСѓС‚Р°СЏ СЃС‚Р°С‚СЊСЏ РЅР° С…Р°Р±СЂРµ. Roadmap РІ ML 
+## Ресурсы
+[Вкатываемся в Machine Learning с нуля за ноль рублей: что, где, в какой последовательности изучить](https://habr.com/ru/articles/774844/). Крутая статья на хабре. Roadmap в ML 
 
-[РћРЅР»Р°Р№РЅ РєРЅРёРіР° РѕС‚ РЇРЅРґРµРєСЃ](https://education.yandex.ru/handbook/ml/). Р§РёС‚Р°Р» С„СЂР°РіРјРµРЅС‚Р°РјРё, РїРѕР»РµР·РЅРѕ.
+[Онлайн книга от Яндекс](https://education.yandex.ru/handbook/ml/). Читал фрагментами, полезно.
 
-[Р РµСЃСѓСЂСЃС‹ РѕС‚ Google](https://developers.google.com/machine-learning?hl=ru). Р§РёС‚Р°Р» С„СЂР°РіРјРµРЅС‚Р°РјРё, РїРѕР»РµР·РЅРѕ.
+[Ресурсы от Google](https://developers.google.com/machine-learning?hl=ru). Читал фрагментами, полезно.
 
-[MediaPipe](https://developers.google.com/mediapipe). Р¤СЂРµР№РјРІРѕСЂРє РґР»СЏ СЂРµС€РµРЅРёСЏ РЅРµРєРѕС‚РѕСЂС‹С… Р·Р°РґР°С‡ РєРѕРјРїСЊСЋС‚РµСЂРЅРѕРіРѕ Р·СЂРµРЅРёСЏ.
+[MediaPipe](https://developers.google.com/mediapipe). Фреймворк для решения некоторых задач компьютерного зрения.
 
-[РљСѓСЂСЃ "РњР°С€РёРЅРЅРѕРµ РѕР±СѓС‡РµРЅРёРµ"](https://www.youtube.com/playlist?list=PLJOzdkh8T5krxc4HsHbB8g8f0hu7973fK). Р›РµРєС†РёРё РІ РЁРђР” РЇРЅРґРµРєСЃ.
+[Курс "Машинное обучение"](https://www.youtube.com/playlist?list=PLJOzdkh8T5krxc4HsHbB8g8f0hu7973fK). Лекции в ШАД Яндекс.
 
-[Р›РµРєС†РёРё Р’РѕСЂРѕРЅС†РѕРІР°](http://www.machinelearning.ru/wiki/index.php?title=РњР°С€РёРЅРЅРѕРµ_РѕР±СѓС‡РµРЅРёРµ_%28РєСѓСЂСЃ_Р»РµРєС†РёР№%2C_Рљ.Р’.Р’РѕСЂРѕРЅС†РѕРІ%29). Р›РµРєС†РёРё С‡РёС‚Р°РµРјС‹Рµ РІ Р¤РЈРџРњ РњР¤РўР Рё Р’РњРёРљ РњР“РЈ.
+[Лекции Воронцова](http://www.machinelearning.ru/wiki/index.php?title=Машинное_обучение_%28курс_лекций%2C_К.В.Воронцов%29). Лекции читаемые в ФУПМ МФТИ и ВМиК МГУ.
 
-[РЎРѕРѕР±С‰РµСЃС‚РІРѕ Р’Рљ "Data Mining"](https://vk.com/datamining.team). РЎР»СѓС‡Р°Р№РЅРѕ РЅР°С‚РєС‚СѓР»СЃСЏ. РђРєС‚РёРІРЅРѕ РїРѕРїРѕР»РЅСЏРµС‚СЃСЏ СЂР°Р·Р»РёС‡РЅС‹РјРё РјР°С‚РµСЂРёР°Р»Р°РјРё.
+[Сообщество ВК "Data Mining"](https://vk.com/datamining.team). Случайно натктулся. Активно пополняется различными материалами.
 
-[Р“РѕРЅСЃР°Р»РµСЃ "С†РёС„СЂРѕРІР°СЏ РѕР±СЂР°Р±РѕС‚РєР° РёР·РѕР±СЂР°Р¶РµРЅРёР№"](???)
+[Гонсалес "цифровая обработка изображений"](???)
 
-[РђРЅР°Р»РёР· РёР·РѕР±СЂР°Р¶РµРЅРёР№ Рё РІРёРґРµРѕ, С‡Р°СЃС‚СЊ 1](https://www.youtube.com/playlist?list=PLlb7e2G7aSpR6L3pqVh8124ZITsmWckQZ). 
+[Анализ изображений и видео, часть 1](https://www.youtube.com/playlist?list=PLlb7e2G7aSpR6L3pqVh8124ZITsmWckQZ). 
 
-[РђРЅР°Р»РёР· РёР·РѕР±СЂР°Р¶РµРЅРёР№ Рё РІРёРґРµРѕ, С‡Р°СЃС‚СЊ 2](https://www.youtube.com/playlist?list=PLlb7e2G7aSpQdGYOtlbo1_2yDcewW3G0m).
+[Анализ изображений и видео, часть 2](https://www.youtube.com/playlist?list=PLlb7e2G7aSpQdGYOtlbo1_2yDcewW3G0m).
 
 
-## РќРµР№СЂРѕРЅРЅС‹Рµ СЃРµС‚Рё
+## Нейронные сети
 
-### РџРѕР»РЅРѕСЃРІСЏР·РЅР°СЏ РЅРµР№СЂРѕРЅРЅР°СЏ СЃРµС‚СЊ (РќРµР№СЂРѕРЅРЅР°СЏ СЃРµС‚СЊ РҐРѕРїС„РёР»РґР°)
-[РњРµС‚РѕРґ РѕР±СЂР°С‚РЅРѕРіРѕ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёСЏ РѕС€РёР±РєРё](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/). РџРѕРґСЂРѕР±РЅРѕ СЂР°СЃСЃРєР°Р·С‹РІР°РµС‚СЃСЏ РїСЂРѕ Р°Р»РіРѕСЂРёС‚Рј Backpropagation РїСЂРёРјРµРЅСЏРµРјС‹Рµ РІ РїРѕР»РЅРѕСЃРІСЏР·РЅС‹С… СЃРµС‚СЏС…
+### Полносвязная нейронная сеть (Нейронная сеть Хопфилда)
+[Метод обратного распространения ошибки](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/). Подробно рассказывается про алгоритм Backpropagation применяемые в полносвязных сетях
 
 ### Convolutional Neural Networks
-[РњРµС‚РѕРґ РѕР±СЂР°С‚РЅРѕРіРѕ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёСЏ РѕС€РёР±РєРё](https://www.jefkine.com/general/2016/09/05/backpropagation-in-convolutional-neural-networks/). РџРѕРґСЂРѕР±РЅРѕ СЂР°СЃСЃРєР°Р·С‹РІР°РµС‚СЃСЏ РїСЂРѕ Р°Р»РіРѕСЂРёС‚Рј Backpropagation РїСЂРёРјРµРЅСЏРµРјС‹Рµ РІ CNN
+[Метод обратного распространения ошибки](https://www.jefkine.com/general/2016/09/05/backpropagation-in-convolutional-neural-networks/). Подробно рассказывается про алгоритм Backpropagation применяемые в CNN
 
-[РўСѓС‚РѕСЂРёР°Р» РїРѕ РїРѕСЃС‚СЂРѕРµРЅРёСЋ РјРѕРґРµР»Рё РґРµС‚РµРєС‚РёСЂРѕРІР°РЅРёСЏ РЅР° РѕСЃРЅРѕРІРµ YOLO](https://www.freecodecamp.org/news/how-to-detect-objects-in-images-using-yolov8/)
+[Туториал по построению модели детектирования на основе YOLO](https://www.freecodecamp.org/news/how-to-detect-objects-in-images-using-yolov8/)
 
 [YOLOv8](https://docs.ultralytics.com/ru/#_1)
 
-[РЎР°РјР°СЏ СЃР»РѕР¶РЅР°СЏ Р·Р°РґР°С‡Р° РІ Computer Vision](https://habr.com/ru/companies/recognitor/articles/505694/). РЎС‚Р°С‚СЊСЏ РїСЂРѕ Object Tracking
+[Самая сложная задача в Computer Vision](https://habr.com/ru/companies/recognitor/articles/505694/). Статья про Object Tracking
 
-[РљР°Рє СЂР°Р±РѕС‚Р°РµС‚ Object Tracking РЅР° YOLO Рё DeepSort](https://habr.com/ru/articles/514450/). РЎС‚Р°С‚СЊСЏ РїСЂРѕ YOLO Рё DeepSort
+[Как работает Object Tracking на YOLO и DeepSort](https://habr.com/ru/articles/514450/). Статья про YOLO и DeepSort
 
 
-## РђРЅР°Р»РёР· С„РѕСЂРј РІ РєРѕРјСЊСЋС‚РµСЂРЅРѕРј Р·СЂРµРЅРёРё
+## Анализ форм в комьютерном зрении
 
