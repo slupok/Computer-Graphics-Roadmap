@@ -15,13 +15,6 @@
 
 [Сообщество ВК "Data Mining"](https://vk.com/datamining.team). Случайно натктулся. Активно пополняется различными материалами.
 
-[Гонсалес "цифровая обработка изображений"](???)
-
-[Анализ изображений и видео, часть 1](https://www.youtube.com/playlist?list=PLlb7e2G7aSpR6L3pqVh8124ZITsmWckQZ). 
-
-[Анализ изображений и видео, часть 2](https://www.youtube.com/playlist?list=PLlb7e2G7aSpQdGYOtlbo1_2yDcewW3G0m).
-
-
 ## Нейронные сети
 
 ### Полносвязная нейронная сеть (Нейронная сеть Хопфилда)
