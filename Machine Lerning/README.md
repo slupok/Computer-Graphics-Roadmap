@@ -23,13 +23,13 @@
 ### Convolutional Neural Networks
 [Метод обратного распространения ошибки](https://www.jefkine.com/general/2016/09/05/backpropagation-in-convolutional-neural-networks/). Подробно рассказывается про алгоритм Backpropagation применяемые в CNN
 
-[Туториал по построению модели детектирования на основе YOLO](https://www.freecodecamp.org/news/how-to-detect-objects-in-images-using-yolov8/)
+[Туториал по построению модели детектирования на основе YOLO](https://www.freecodecamp.org/news/how-to-detect-objects-in-images-using-yolov8/). Почитать
 
-[YOLOv8](https://docs.ultralytics.com/ru/#_1)
+[YOLOv8](https://docs.ultralytics.com/ru/#_1). Почитать
 
-[Самая сложная задача в Computer Vision](https://habr.com/ru/companies/recognitor/articles/505694/). Статья про Object Tracking
+[Самая сложная задача в Computer Vision](https://habr.com/ru/companies/recognitor/articles/505694/). Статья про Object Tracking. Почитать
 
-[Как работает Object Tracking на YOLO и DeepSort](https://habr.com/ru/articles/514450/). Статья про YOLO и DeepSort
+[Как работает Object Tracking на YOLO и DeepSort](https://habr.com/ru/articles/514450/). Статья про YOLO и DeepSort. Почитать
 
 
 ## Анализ форм в комьютерном зрении
