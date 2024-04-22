@@ -1,12 +1,12 @@
-# ÷ËÙÓ‚‡ˇ Ó·‡·ÓÚÍ‡ ËÁÓ·‡ÊÂÌËÈ
+# –¶–∏—Ñ—Ä–æ–≤–∞—è –æ–±—Ä–∞–±–æ—Ç–∫–∞ –∏–∑–æ–±—Ä–∞–∂–µ–Ω–∏–π
 
-## –ÂÒÛÒ˚
+## –†–µ—Å—É—Ä—Å—ã
 
-[!IMPORTANT]
-[√ÓÌÒ‡ÎÂÒ "ˆËÙÓ‚‡ˇ Ó·‡·ÓÚÍ‡ ËÁÓ·‡ÊÂÌËÈ"](...)
+> [!IMPORTANT]
+> [–ì–æ–Ω—Å–∞–ª–µ—Å "—Ü–∏—Ñ—Ä–æ–≤–∞—è –æ–±—Ä–∞–±–æ—Ç–∫–∞ –∏–∑–æ–±—Ä–∞–∂–µ–Ω–∏–π"](...)
 
-[!IMPORTANT]
-[¿Ì‡ÎËÁ ËÁÓ·‡ÊÂÌËÈ Ë ‚Ë‰ÂÓ, ˜‡ÒÚ¸ 1](https://www.youtube.com/playlist?list=PLlb7e2G7aSpR6L3pqVh8124ZITsmWckQZ). 
+> [!IMPORTANT]
+> [–ê–Ω–∞–ª–∏–∑ –∏–∑–æ–±—Ä–∞–∂–µ–Ω–∏–π –∏ –≤–∏–¥–µ–æ, —á–∞—Å—Ç—å 1](https://www.youtube.com/playlist?list=PLlb7e2G7aSpR6L3pqVh8124ZITsmWckQZ). 
 
-[!IMPORTANT]
-[¿Ì‡ÎËÁ ËÁÓ·‡ÊÂÌËÈ Ë ‚Ë‰ÂÓ, ˜‡ÒÚ¸ 2](https://www.youtube.com/playlist?list=PLlb7e2G7aSpQdGYOtlbo1_2yDcewW3G0m).
+> [!IMPORTANT]
+> [–ê–Ω–∞–ª–∏–∑ –∏–∑–æ–±—Ä–∞–∂–µ–Ω–∏–π –∏ –≤–∏–¥–µ–æ, —á–∞—Å—Ç—å 2](https://www.youtube.com/playlist?list=PLlb7e2G7aSpQdGYOtlbo1_2yDcewW3G0m).
