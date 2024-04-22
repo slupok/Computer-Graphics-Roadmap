@@ -1,7 +1,6 @@
 # Programming
 
-## Ресурсы
-
+## C++
 [!TIP]
 [Лекции C++](https://www.youtube.com/playlist?list=PLmGioT8z4uobADCfbspDyzZtshzFFCRyj). Порекомендовали
 
