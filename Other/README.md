@@ -3,4 +3,4 @@
 ## Ресурсы
 
 > [!IMPORTANT]
-> [the component gallery]([(https://component.gallery/components/)]). каталог компонентов пользовательских интерфейсов
+> [the component gallery](https://component.gallery/components/). Каталог компонентов пользовательских интерфейсов
