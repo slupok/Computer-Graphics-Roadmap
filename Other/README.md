@@ -8,3 +8,5 @@
 > [Material Design](https://m3.material.io/).
 > 
 > [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/about.html). Визуализация структур данных
+>
+> [Manim](https://www.manim.community/). Python библиотека для визуализации математики
