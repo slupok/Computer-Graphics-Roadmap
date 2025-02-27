@@ -107,6 +107,7 @@ const MATH_CG_INFO = {
                 '[en/ru] <a href="https://github.com/ssloy/tinyraycaster/wiki/Part-0:-getting-started">Ray cast tutorial</a>. Создание клона игры Wolfenstein 3D без использования графических библиотек',
                 '[en/ru] <a href="https://github.com/ssloy/tinyraytracer/wiki/Part-1:-understandable-raytracing">Ray trace tutorial</a>. Написание трассировщика лучей на C++',
                 '[en/ru] <a href="https://github.com/ssloy/tinykaboom/wiki/KABOOM!-in-180-lines-of-code">Ray trace KABOOM tutorial</a>. Рендер взрыва трассировкой лучей на C++',
+                '[en] <a href="https://www.scratchapixel.com/index.html">Scratchapixel</a>. Сборник образовательных материалов программированию компьютерной графики',
                 '[en] Eric Lengyel "Mathematics for 3D Game Programming and Computer Graphics". Одна из фундаментальных книг по КГ, описывающая академическим языком аспекты математических основ КГ'
         ]
 }
