@@ -122,7 +122,8 @@ const MATH_CG_INFO = {
                 '[en/ru] <a href="https://github.com/ssloy/tinykaboom/wiki/KABOOM!-in-180-lines-of-code">Ray trace KABOOM tutorial</a>. Рендер взрыва трассировкой лучей на C++',
                 '[en] <a href="https://pbr-book.org/">Physically Based Rendering: From Theory To Implementation</a>. Онлайн-книга с теорией и реализацией физически корректного рендеринга',
                 '[en] <a href="https://www.scratchapixel.com/index.html">Scratchapixel</a>. Сборник обучающих материалов программированию компьютерной графики',
-                '[en] Eric Lengyel "Mathematics for 3D Game Programming and Computer Graphics". Одна из фундаментальных книг по КГ, описывающая академическим языком аспекты математических основ КГ'
+                '[en] Eric Lengyel "Mathematics for 3D Game Programming and Computer Graphics". Одна из фундаментальных книг по КГ, описывающая академическим языком аспекты математических основ КГ',
+                '[en] Tomas Akenine-Moller "Real-Time Rendering". Часто советовали эту книгу для начинающих в интернете'
         ]
 }
 
