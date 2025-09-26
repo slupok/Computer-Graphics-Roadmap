@@ -15,7 +15,7 @@ const MATH_ANALYSIS_INFO = {
                 '[easy] <a href="http://mathprofi.ru/kak_naiti_proizvodnuju.html">Производные</a>. Производные от mathprofi',
                 '[easy] <a href="http://mathprofi.ru/grafiki_i_svoistva_funkcij.html">Графики и функции</a>. Графики и функции от mathprofi',
                 '[easy] <a href="http://mathprofi.ru/funkcija_dvuh_peremennyh_oblast_opredelenija_linii_urovnja.html">Функции нескольких переменных</a>. Функции нескольких переменных от mathprofi',
-                '[easy] <a href="http://mathprofi.ru/integraly_primery_reshenij.html">Интеграллы</a>. Интеграллы от mathprofi',
+                '[easy] <a href="http://mathprofi.ru/integraly_primery_reshenij.html">Интеграллы</a>. Интегралы от mathprofi',
                 '[easy] <a href="http://mathprofi.ru/ryady_dlya_chajnikov.html">Числовые ряды</a>. Числовые ряды от mathprofi',
                 '[medium] Фихтенгольц Г.М. "Основы математического анализа (Часть 1-2)". Классический университетский учебник, ',
                 '[medium] Ильин В.А. "Основы математического анализа (Часть 1-2)". Классический университетский учебник',
