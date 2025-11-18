@@ -286,8 +286,10 @@ const PBR_INFO = {
     title: "Физически корректный рендеринг",
     image: "resources/subjects/default.png",
     description: "Physically based rendering (PBR) - это метод компьютерной графики, который позволяет рендерить фотореалистичные изображения.",
-    resources: ['[en] <a href="https://pbr-book.org/">Physically Based Rendering: From Theory To Implementation</a> Основная книга по PBR',
-                '[en] Julian Fong, Magnus Wrenninge, Christopher Kulla and Ralf Habel "Production volume rendering: SIGGRAPH 2017 course". Большая статья, описывающая техники современного объемного рендеринге в кинопроизводстве'
+    resources: ['[en] <a href="https://pbr-book.org/">Physically Based Rendering: From Theory To Implementation</a> Большая книга по PBR, практико-ориентированная подача материала',
+                '[en] Julian Fong, Magnus Wrenninge, Christopher Kulla and Ralf Habel "Production volume rendering: SIGGRAPH 2017 course". Большая статья, описывающая техники современного объемного рендеринге в кинопроизводстве',
+                '[en] <a href="https://momentsingraphics.de/RadiometryOverview.html">Radiometry: Overview</a> Теория в заметках по радиометрии используемая в PBR (блог Moments in Graphics)',
+                '[en] <https://momentsingraphics.de/SpectralRenderingOverview.html">Spectral rendering: Overview</a> Теория в заметках по спектральному рендерингу (блог Moments in Graphics)'
             ]
 }
 
