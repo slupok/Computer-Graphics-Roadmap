@@ -83,6 +83,7 @@ const PROGRAMMING_LANGUAGE_INFO = {
                 '[medium] <a href="https://compscicenter.ru/courses/cpp-1/2018-autumn/classes/">Программирование на C++, часть 1</a>. Качественные и крутые лекции. Не подходят для изучения с нуля',
                 '[medium] <a href="https://compscicenter.ru/courses/cpp-2/2019-spring/classes/">Программирование на C++, часть 2</a>. Качественные и крутые лекции. Не подходят для изучения с нуля',
                 '[medium] <a href="https://www.youtube.com/playlist?list=PLmGioT8z4uobADCfbspDyzZtshzFFCRyj">Лекции C++</a>. Продвинутые и короткие лекции по современным стандартам C++',
+		'[hard] <a href="https://stepik.org/course/251888/promo">Нескучное программирование. С++ без аллокаций памяти</a>. Автор пишет много крутого материала на тему статического полиморфизма, думаю, что его курс также крут как и статьи.',
                 '[easy] <a href="https://education.yandex.ru/handbook/python">Основы python</a>. Яндекс хендбук',
                 '[easy] <a href="https://senjun.ru/courses/python/">Курс python</a>. Opensource курс по python',
                 '[easy][en] <a href="https://www.geeksforgeeks.org/python-programming-language-tutorial/">Python</a>. Python Tutorial (geeksforgeeks)',
@@ -164,7 +165,8 @@ const GPGPU_INFO = {
     title: "Вычисления на видеокартах (GPGPU)",
     image: "resources/subjects/default.png",
     description: "Вычисления на графических процессорах - методика использование графического процессора видеокарты для математических вычислений.\n В основном выделяют технологии: CUDA (NVidia devices), OpenCL (most devices), Metal (Apple devices), ROCm (AMD devices)",
-    resources: ['[ru] <a href="https://www.youtube.com/playlist?list=PLlb7e2G7aSpSptbl_yI5uvMlpRc1mwsCL">Вычисления на видеокартах</a>. Курс, в котором рассказываются общие концепции GPGPU без привязки к какой-то конкретной технологии',
+    resources: ['[ru] <a href="https://www.youtube.com/playlist?list=PLlb7e2G7aSpSptbl_yI5uvMlpRc1mwsCL">Вычисления на видеокартах (2022)</a>. Курс, в котором рассказываются общие концепции GPGPU без привязки к какой-то конкретной технологии',
+		'[ru] <a href="https://csspace.io/course/2025fall-gpu">Вычисления на видеокартах (2025)</a>. Курс, в котором рассказываются общие концепции GPGPU без привязки к какой-то конкретной технологии',
                 '[ru] <a href="https://github.com/GPGPUCourse/GPGPUSpeedupGuidelines?tab=readme-ov-file">Профилирование и ускорение GPGPU</a>. Короткий курс из двух лекции по ускорению работы GPGPU',
                 '[en] <a href="https://developer.apple.com/metal/sample-code/">Metal Sample Code</a>. Официальное руководство с примерами Metal'
             ]
@@ -199,7 +201,9 @@ const OPTIMIZATION_METHODS_INFO = {
     title: "Методы оптимизаций",
     image: "resources/subjects/default.png",
     description: "Оптимизация в математике — задача нахождения экстремума (минимума или максимума) целевой функции в некоторой области конечномерного векторного пространства. Методы оптимизаций играют вазжейшую роль в машинном обучении, именно на этих методах основаны все алгоритмы обучения",
-    resources: ["..", "..", ".."]
+    resources: ['[ru] <a href="https://csspace.io/course/2025fall-lin-opt">Линейная оптимизация</a>. Лекции CS Space (не проверено)',
+		'[ru] <a href="https://csspace.io/course/2025spring-opt">Нелинейная оптимизация</a>. Лекции СS Space (не проверено)'
+	]
 }
 
 const DATA_ANALYSIS_INFO = {
@@ -293,6 +297,19 @@ const PBR_INFO = {
             ]
 }
 
+const COLOR_SCIENCE_INFO = {
+    attribute: 26,
+    title: "Колорометрия",
+    image: "resources/subjects/default.png",
+    description: "Это наука о цвете и методы его измерения",
+    resources: ['[en] Wyszecki, Günter "Color science : concepts and methods, quantitative data and formulae"',
+                '[en] <a href="https://www.colour-science.org/">Библиотека colour science</a>. Отличная python библиотека, в которой все реализовано',
+                '[ru] <a href="https://habr.com/ru/companies/airi/articles/901284/">Цветовая вычислительная фотография. Часть 1: Теория цвета</a>. Доступное введение в колорометрию',
+                '[ru] <a href="https://habr.com/ru/companies/airi/articles/916116/">Цветовая вычислительная фотография. Часть 2: Стандарты CIE 1931</a>. Доступное введение в колорометрию',
+		'[ru] <a href="https://habr.com/ru/companies/airi/articles/954982/">Цветовая вычислительная фотография. Часть 3: За границами стандарта CIE 1931</a>. Доступное введение в колорометрию'
+            ]
+}
+
 const subjectsArray = new Map();
 subjectsArray.set(NULL_INFO.attribute, NULL_INFO);
 subjectsArray.set(MATH_ANALYSIS_INFO.attribute, MATH_ANALYSIS_INFO);
@@ -322,3 +339,4 @@ subjectsArray.set(DIFF_INFO.attribute, DIFF_INFO);
 subjectsArray.set(TOPOLOGICAL_ANALYSIS_INFO.attribute, TOPOLOGICAL_ANALYSIS_INFO);
 
 subjectsArray.set(PBR_INFO.attribute, PBR_INFO);
+subjectsArray.set(COLOR_SCIENCE_INFO.attribute, COLOR_SCIENCE_INFO);
