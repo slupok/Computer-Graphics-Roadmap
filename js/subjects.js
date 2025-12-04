@@ -79,6 +79,7 @@ const PROGRAMMING_LANGUAGE_INFO = {
     description: "Первым делом, язык программирования - это инструмент, инструмент для общения с компьютером. Важно еще понимать, что не существует универсального ЯП, каждый ЯП решает определенный задачи",
     resources: ['[easy] <a href="https://education.yandex.ru/handbook/cpp">Основы C++</a>. Яндекс хендбук',
                 '[easy] <a href="https://www.learncpp.com/">Learn C++</a>. Большой набор материалов по изучению C++',
+                '[easy] <a href="https://cmake.org/cmake/help/latest/guide/tutorial/index.html">CMake Tutorial</a>. Оффициальный туториал по CMake',
                 '[medium] <a href="https://habr.com/ru/articles/599801/">Просто о шаблонах С++</a>. Введение в метапрограммирование на C++',
                 '[medium] <a href="https://compscicenter.ru/courses/cpp-1/2018-autumn/classes/">Программирование на C++, часть 1</a>. Качественные и крутые лекции. Не подходят для изучения с нуля',
                 '[medium] <a href="https://compscicenter.ru/courses/cpp-2/2019-spring/classes/">Программирование на C++, часть 2</a>. Качественные и крутые лекции. Не подходят для изучения с нуля',
