@@ -37,6 +37,11 @@ button:hover {
     margin-bottom: 5px;
 }
 
+#logo > a {
+  color: inherit; /* Или укажите конкретный цвет, например, black */
+  text-decoration: none;
+}
+
 /* ===== Навигация ===== */
 #nav-list {
     display: flex;
