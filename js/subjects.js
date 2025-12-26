@@ -127,8 +127,9 @@ const MATH_CG_INFO = {
                 '[en/ru] <a href="https://github.com/ssloy/tinyraycaster/wiki/Part-0:-getting-started">Ray cast tutorial</a>. Создание клона игры Wolfenstein 3D без использования графических библиотек',
                 '[en/ru] <a href="https://github.com/ssloy/tinyraytracer/wiki/Part-1:-understandable-raytracing">Ray trace tutorial</a>. Написание трассировщика лучей на C++',
                 '[en/ru] <a href="https://github.com/ssloy/tinykaboom/wiki/KABOOM!-in-180-lines-of-code">Ray trace KABOOM tutorial</a>. Рендер взрыва трассировкой лучей на C++',
-                '[en] <a href="https://pbr-book.org/">Physically Based Rendering: From Theory To Implementation</a>. Онлайн-книга с теорией и реализацией физически корректного рендеринга',
-                '[en] <a href="https://www.scratchapixel.com/index.html">Scratchapixel</a>. Сборник обучающих материалов программированию компьютерной графики',
+                '[en] <a href="https://raytracing.github.io/">Ray Tracing in One Weekend</a>. Серия обучающих материалов по трассировке лучей',
+                '[en] <a href="https://pbr-book.org/">Physically Based Rendering: From Theory To Implementation</a>. Онлайн-книга по реализации PBR рендер. Практико-ориентированная подача материала, но чрезчур последовательная структура, поэтому ее трудно использовать как справочник',
+                '[en] <a href="https://www.scratchapixel.com/index.html">Scratchapixel</a>. Сборник обучающих материалов программированию компьютерной графики, приятное повествование',
                 '[en] Eric Lengyel "Mathematics for 3D Game Programming and Computer Graphics". Одна из фундаментальных книг по КГ, описывающая академическим языком аспекты математических основ КГ',
                 '[en] Tomas Akenine-Moller "Real-Time Rendering". Часто советовали эту книгу для начинающих в интернете'
         ]
@@ -291,7 +292,7 @@ const PBR_INFO = {
     title: "Физически корректный рендеринг",
     image: "resources/subjects/default.png",
     description: "Physically based rendering (PBR) - это метод компьютерной графики, который позволяет рендерить фотореалистичные изображения.",
-    resources: ['[en] <a href="https://pbr-book.org/">Physically Based Rendering: From Theory To Implementation</a>. Большая книга по PBR, практико-ориентированная подача материала',
+    resources: ['[en] <a href="https://pbr-book.org/">Physically Based Rendering: From Theory To Implementation</a>. Онлайн-книга по реализации PBR рендер. Практико-ориентированная подача материала, но чрезчур последовательная структура, поэтому ее трудно использовать как справочник',
                 '[en] Julian Fong, Magnus Wrenninge, Christopher Kulla and Ralf Habel "Production volume rendering: SIGGRAPH 2017 course". Большая статья, описывающая техники современного объемного рендеринге в кинопроизводстве',
                 '[en] <a href="https://momentsingraphics.de/RadiometryOverview.html">Radiometry: Overview</a>. Теория в заметках по радиометрии используемая в PBR (блог Moments in Graphics)',
                 '[en] <a href="https://momentsingraphics.de/SpectralRenderingOverview.html">Spectral rendering: Overview</a>. Теория в заметках по спектральному рендерингу (блог Moments in Graphics)'
