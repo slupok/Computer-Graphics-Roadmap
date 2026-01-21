@@ -50,7 +50,7 @@ const ANALYTICAL_GEOMETRY_INFO = {
 const DISCRETE_MATH_INFO = {
     attribute: 4,
     title: "Дискретная математика",
-    image: "resources/subjects/default.png",
+    image: "resources/subjects/discrete_math.png",
     description: "Дает теоретические основы для работы с разными структурами данных. Логика, графы, деревья, множества, отношения и т.д. - все это важные элементы прикладной математики в целом",
     resources: ['[medium] Новиков Ф.А. "Дискретная математика для программистов"',
                 'Кристофидес Н. "Теория графов. Алгоритмический подход". Одна из лучших книг по теории графов'
@@ -60,7 +60,7 @@ const DISCRETE_MATH_INFO = {
 const STATISTICS_AND_PROBABILITY_INFO = {
     attribute: 5,
     title: "Теория вероятностей и математическая статистика",
-    image: "resources/subjects/default.png",
+    image: "resources/subjects/prob_and_stat.png",
     description: "Компьютерная графика активно использует вероятностные и статистические методы, например, для симуляции отражения и преломления света, моделирования физических процессов, обработки изображений и задач компьютерного зрения",
     resources: ['[easy] <a href="http://mathprofi.ru/teorija_verojatnostei.html">Теория вероятностей</a>. Теория вероятностей от mathprofi',
                 '[easy] <a href="https://stepik.org/course/3089/promo">Основы теории вероятностей</a>. Курс по основам теории вероятностей на stepik',
