@@ -140,8 +140,9 @@ const GRAPHICS_LIB_INFO = {
     title: "Графические библиотеки",
     image: "resources/subjects/default.png",
     description: "Графическая библиотека - это программная библиотека, предназначенная для рендеринга компьютерной графики. Как правило, она предоставляет оптимизированные версии функций, которые выполняют распространённые задачи рендеринга (отрисовка треугольников, растеризация и т.д.\n Основные технологии: OpenGL, Vulkan, Metal, DirectX3D",
-    resources: ['[en] <a href="https://vulkan-tutorial.com/">Vulkan tutorial</a>. Официальный обучающий материал по Vulkan',
+    resources: ['[en] <a href="https://vulkan-tutorial.com/">Vulkan tutorial</a>. Хороший обучающий материал по Vulkan. Официальный туториал основан на нем',
                 '[en] <a href="https://thebookofshaders.com/">The book of shaders</a>. Руководство по написанию шейдеров',
+                '[en] <a href="https://shader-slang.org/">Slang shading language</a>. Не пробовал, но предварительно нравится. Красивый и удобный, мне кажется, что он способен решить проблему унификации в шейдерных языках.'
                 '[en] <a href="https://en.wikipedia.org/wiki/Graphics_pipeline">Render pipeline</a>. Страница на вики про конвеер рендера',
                 '[en] <a href="https://developer.apple.com/metal/sample-code/">Metal Sample Code</a>. Официальное руководство с примерами Metal',
                 '[en] <a href="https://www.3dgep.com/learning-directx-12-1/">DirectX tutorial</a>. Серия уровков по DorectX',
