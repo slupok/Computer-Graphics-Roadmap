@@ -1,0 +1,33 @@
+---
+---
+<header>
+  <div id="logo"><a href="/">Computer<br>Graphics<br>Roadmap</a></div>
+  <button id="menu-toggle" aria-label="Открыть меню">☰</button>
+  <nav>
+    <ul id="nav-list">
+      <li><a href="/">О компьютерной графике</a></li>
+      <li><a href="/roadmap">Карта компетенций</a></li>
+      <li><a>Специализации</a></li>
+      <li><a href="/materials">Материалы</a></li>
+      <li><a href="/about">О проекте</a></li>
+    </ul>
+  </nav>
+</header>
+<script>
+  const menuToggle = document.getElementById('menu-toggle')!;
+  const navList = document.getElementById('nav-list')!;
+  menuToggle.addEventListener('click', (e) => {
+    const isOpen = navList.classList.toggle('active');
+    menuToggle.textContent = isOpen ? '✕' : '☰';
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    e.stopPropagation();
+  });
+  navList.addEventListener('click', (e) => e.stopPropagation());
+  document.addEventListener('click', () => {
+    if (navList.classList.contains('active')) {
+      navList.classList.remove('active');
+      menuToggle.textContent = '☰';
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
