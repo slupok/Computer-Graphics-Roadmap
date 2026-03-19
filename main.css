@@ -68,8 +68,19 @@ button:hover {
     display: none;
     background: none;
     border: none;
-    font-size: 28px;
+    font-size: 24px;
+    line-height: 1;
     cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #5a3e36;
+    transition: background-color 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#menu-toggle:hover {
+    background-color: #c2947f40;
 }
 
 /* ===== Адаптация под мобильные ===== */
@@ -77,6 +88,7 @@ button:hover {
     header {
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
     }
 
     #menu-toggle {
@@ -85,25 +97,41 @@ button:hover {
 
     nav {
         width: 100%;
-        max-height: 0;
-        transition: max-height 0.4s ease;
+        overflow: hidden;
     }
 
     #nav-list {
         flex-direction: column;
         align-items: center;
-        gap: 16px;
+        gap: 0;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.4s ease;
+        transition: max-height 0.35s ease, padding 0.35s ease;
+        padding: 0;
+        border-top: 1px solid transparent;
     }
 
     #nav-list.active {
-        max-height: 500px; /* раскрытие меню */
+        max-height: 400px;
+        padding: 12px 0 16px;
+        border-top: 1px solid #e0d5c5;
     }
 
-    nav.active {
-        max-height: 500px; /* раскрытие меню */
+    #nav-list li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav-list li a {
+        display: block;
+        padding: 10px 16px;
+        border-bottom: none;
+    }
+
+    #nav-list li a:hover {
+        background-color: #c2947f20;
+        border-bottom: none;
+        color: #5a3e36;
     }
 }
 

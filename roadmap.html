@@ -40,9 +40,21 @@
     </footer>
 
     <script>
-        document.getElementById('menu-toggle').addEventListener('click', () => {
-            document.getElementById('nav-list').classList.toggle('active');
-            document.querySelector('nav').classList.toggle('active');
+        const menuToggle = document.getElementById('menu-toggle');
+        const navList = document.getElementById('nav-list');
+        menuToggle.addEventListener('click', (e) => {
+            const isOpen = navList.classList.toggle('active');
+            menuToggle.textContent = isOpen ? '✕' : '☰';
+            menuToggle.setAttribute('aria-expanded', isOpen);
+            e.stopPropagation();
+        });
+        navList.addEventListener('click', (e) => e.stopPropagation());
+        document.addEventListener('click', () => {
+            if (navList.classList.contains('active')) {
+                navList.classList.remove('active');
+                menuToggle.textContent = '☰';
+                menuToggle.setAttribute('aria-expanded', false);
+            }
         });
     </script>
 </body>
