@@ -1,0 +1,26 @@
+---
+title: "Общее"
+order: 1
+resources:
+  - url: "https://compscicenter.ru/"
+    title: "Computer Science Center"
+    description: "Набор различных курсов по математике и программированию. В 2022 приостановил работу, но материалы там остались"
+  - url: "https://habr.com/"
+    title: "Habr"
+    description: "Главный IT-ресурс в СНГ"
+  - url: "https://www.researchgate.net/"
+    title: "Research Gate"
+    description: "Один из главных научных ресурсов в мире"
+  - url: "https://www.sci-hub.ru/"
+    title: "sci-hub"
+    description: "Свободный доступ ко всему научному знанию. Здесь можно найти 99.9% научных статей публикуемых в подписочных научных изданиях/журналах"
+  - url: "https://teach-in.ru/about"
+    title: "Лекторий Teach-in"
+    description: "Лекции учебных курсов МГУ"
+  - url: "https://intuit.ru/studies/courses"
+    title: "НОУ ИНТУИТ"
+    description: "Огромный набор различных курсов"
+  - url: "https://csspace.io/"
+    title: "CS Space"
+    description: "Свежий образовательный проект, имеются крутые лекции"
+---

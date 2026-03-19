@@ -23,10 +23,28 @@ const subjects = defineCollection({
 const stages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/stages' }),
   schema: z.object({
-    number: z.string(),
+    stage_id: z.string(),
+    stage_name: z.string(),
     title: z.string(),
     order: z.number(),
+    description: z.string(),
   }),
 });
 
-export const collections = { subjects, stages };
+const materialLink = z.object({
+  url: z.string(),
+  title: z.string(),
+  description: z.string().optional(),
+});
+
+const materials = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/materials' }),
+  schema: z.object({
+    title: z.string(),
+    order: z.number(),
+    resources: z.array(materialLink).default([]),
+    articles: z.array(materialLink).default([]),
+  }),
+});
+
+export const collections = { subjects, stages, materials };
