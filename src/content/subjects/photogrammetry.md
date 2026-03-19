@@ -1,5 +1,4 @@
 ---
-id: 18
 title: "Фотограмметрия"
 image: "/resources/subjects/default.png"
 stage: "highly-specialized"

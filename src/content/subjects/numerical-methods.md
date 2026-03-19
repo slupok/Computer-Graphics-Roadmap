@@ -1,5 +1,4 @@
 ---
-id: 13
 title: "Численные методы"
 image: "/resources/subjects/default.png"
 stage: "advanced"

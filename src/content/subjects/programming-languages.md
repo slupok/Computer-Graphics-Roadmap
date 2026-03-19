@@ -1,5 +1,4 @@
 ---
-id: 6
 title: "Языки программирования"
 image: "/resources/subjects/prog_lang.png"
 stage: "base-cs"

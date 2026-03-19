@@ -473,3 +473,27 @@ footer {
     padding-top: 4em;
     margin-top: 6em;
 }
+
+.footer-github {
+    margin-top: 1.2em;
+}
+
+.footer-github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    color: #a2a7ac;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.2s;
+}
+
+.footer-github-link:hover {
+    color: #3b4045;
+}
+
+.footer-github-icon {
+    width: 1.1em;
+    height: 1.1em;
+    fill: currentColor;
+}

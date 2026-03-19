@@ -1,5 +1,4 @@
 ---
-id: 10
 title: "Графические библиотеки"
 image: "/resources/subjects/default.png"
 stage: "graphics-programming"

@@ -1,5 +1,4 @@
 ---
-id: 11
 title: "Игровые движки"
 image: "/resources/subjects/default.png"
 stage: "graphics-programming"

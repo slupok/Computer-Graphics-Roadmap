@@ -1,5 +1,4 @@
 ---
-id: 12
 title: "Вычисления на видеокартах (GPGPU)"
 image: "/resources/subjects/default.png"
 stage: "advanced"

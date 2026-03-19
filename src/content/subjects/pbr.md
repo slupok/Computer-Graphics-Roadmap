@@ -1,5 +1,4 @@
 ---
-id: 25
 title: "Физически корректный рендеринг"
 image: "/resources/subjects/default.png"
 stage: "advanced"

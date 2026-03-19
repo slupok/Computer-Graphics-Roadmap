@@ -1,5 +1,4 @@
 ---
-id: 17
 title: "Обработка и визуализация томмографических данных"
 image: "/resources/subjects/default.png"
 stage: "highly-specialized"

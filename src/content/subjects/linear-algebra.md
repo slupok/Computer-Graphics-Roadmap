@@ -1,5 +1,4 @@
 ---
-id: 2
 title: "Линейная алгебра"
 image: "/resources/subjects/default.png"
 stage: "base-math"

@@ -1,5 +1,4 @@
 ---
-id: 14
 title: "Вычислительная геометрия"
 image: "/resources/subjects/default.png"
 stage: "advanced"

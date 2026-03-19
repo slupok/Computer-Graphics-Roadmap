@@ -1,5 +1,4 @@
 ---
-id: 26
 title: "Колорометрия"
 image: "/resources/subjects/default.png"
 stage: "highly-specialized"

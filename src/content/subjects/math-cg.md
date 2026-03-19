@@ -1,5 +1,4 @@
 ---
-id: 9
 title: "Математические основы компьютерной графики"
 image: "/resources/subjects/default.png"
 stage: "base-cg"
