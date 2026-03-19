@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection, render } from 'astro:content';
+import { stages } from '../data/stages';
+
+const allSubjects = await getCollection('subjects');
+
+// Pre-render each subject's content
+const renderedSubjects = await Promise.all(
+  allSubjects.map(async (subject) => {
+    const { Content } = await render(subject);
+    return { subject, Content };
+  })
+);
+
+function getRendered(stageId: string) {
+  return renderedSubjects
+    .filter(r => r.subject.data.stage === stageId)
+    .sort((a, b) => a.subject.data.order - b.subject.data.order);
+}
+---
+<BaseLayout title="Computer Graphics Roadmap">
+  <Header />
+
+  <div id="about-background">
+    <div class="about-describe content">
+      <div class="about-text">
+        <h2>О компьютерной графике</h2>
+        <p>
+          Программирование компьютерной графики — это сложная и многогранная область, охватывающая множество специализаций: от разработки игр до создания интеллектуальных систем.
+          <br /><br />
+          <b>Computer Graphics Roadmap</b> — это путеводитель для тех, кто осваивает программирование компьютерной графики.
+          Здесь собраны книги, лекции и курсы, отобранные и систематизированные в удобную дорожную карту развития.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="/resources/Euclid.png" alt="Euclid" />
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="levels">
+      {stages.map(stage => (
+        <div id={stage.id} class="section">
+          <div class="level-about">
+            <div class="level-header">
+              <p class="level-number">{stage.number}</p>
+              <h2>{stage.title}</h2>
+            </div>
+            <div class="level-describe">
+              <p>{stage.description}</p>
+            </div>
+          </div>
+          <div class="subjects-list">
+            {getRendered(stage.id).map(({ subject, Content }) => (
+              <div class="subject">
+                <img class="subject-image-preview" src={subject.data.image} alt={subject.data.title} />
+                <h3>{subject.data.title}</h3>
+                <button class="subject-info-btn" data-id={subject.data.id}>Подробнее</button>
+                <template class="modal-content">
+                  <h3>{subject.data.title}</h3>
+                  <div class="subject-description-modal">{subject.data.description}</div>
+                  <Content />
+                </template>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <dialog id="subject-modal" style="padding: 0">
+    <div id="modal-subject-box" style="padding: 1rem">
+      <button id="close-modal-btn">&#x2715;</button>
+    </div>
+  </dialog>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  const modal = document.getElementById('subject-modal') as HTMLDialogElement;
+  const modalBox = document.getElementById('modal-subject-box')!;
+  const closeBtn = document.getElementById('close-modal-btn')!;
+
+  closeBtn.addEventListener('click', () => {
+    modal.close();
+  });
+
+  document.querySelectorAll('.subject-info-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const card = (e.target as HTMLElement).closest('.subject')!;
+      const template = card.querySelector('template.modal-content') as HTMLTemplateElement;
+      // Clear previous content (keep close button)
+      modalBox.innerHTML = '';
+      modalBox.appendChild(closeBtn);
+      modalBox.appendChild(template.content.cloneNode(true));
+      modal.showModal();
+      e.stopPropagation();
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (modal.open && !modalBox.contains(e.target as Node)) {
+      modal.close();
+    }
+  });
+</script>
