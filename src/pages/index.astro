@@ -13,6 +13,7 @@ function getStageSubjects(stageId: string) {
     .filter(s => s.data.stage === stageId)
     .sort((a, b) => a.data.order - b.data.order);
 }
+
 ---
 <BaseLayout title="Computer Graphics Roadmap">
   <Header />
@@ -37,41 +38,23 @@ function getStageSubjects(stageId: string) {
   <div class="content">
     <div id="levels">
       {stages.map(stage => (
-        <div id={stage.id} class="section">
+        <div id={stage.data.stage_id} class="section">
           <div class="level-about">
             <div class="level-header">
-              <p class="level-number">{stage.data.number}</p>
+              <p class="level-number">{stage.data.stage_name}</p>
               <h2>{stage.data.title}</h2>
             </div>
             <div class="level-describe">
-              <p>{stage.body}</p>
+              <p>{stage.data.description}</p>
             </div>
           </div>
           <div class="subjects-list">
-            {getStageSubjects(stage.id).map(subject => (
+            {getStageSubjects(stage.data.stage_id).map(subject => (
               <div class="subject">
                 <img class="subject-image-preview" src={subject.data.image} alt={subject.data.title} />
                 <h3>{subject.data.title}</h3>
                 <p style="white-space: pre-line">{subject.data.description}</p>
                 <button class="subject-info-btn" data-id={subject.data.id}>Подробнее</button>
-                <template class="modal-content">
-                  <h3>{subject.data.title}</h3>
-                  <div class="subject-description-modal">{subject.data.description}</div>
-                  <h4>Материалы для изучения</h4>
-                  <ul class="subject-resources">
-                    {subject.data.resources.map(resource => (
-                      <li>
-                        {resource.level && <span class="resource-level">[{resource.level}]</span>}
-                        {resource.language && <span class="resource-language">[{resource.language}]</span>}
-                        {' '}
-                        {resource.url
-                          ? <a href={resource.url} target="_blank" rel="noopener">{resource.title}</a>
-                          : resource.title}
-                        {resource.description && <>. {resource.description}</>}
-                      </li>
-                    ))}
-                  </ul>
-                </template>
               </div>
             ))}
           </div>
@@ -89,7 +72,35 @@ function getStageSubjects(stageId: string) {
   <Footer />
 </BaseLayout>
 
+<script type="application/json" id="subjects-data" set:html={JSON.stringify(
+  allSubjects.map(s => ({
+    id: s.data.id,
+    title: s.data.title,
+    description: s.data.description,
+    resources: s.data.resources,
+  }))
+)}></script>
+
 <script>
+  interface Resource {
+    level?: string;
+    language?: string;
+    url?: string;
+    title: string;
+    description?: string;
+  }
+  interface SubjectData {
+    id: number;
+    title: string;
+    description: string;
+    resources: Resource[];
+  }
+
+  const subjectsData: SubjectData[] = JSON.parse(
+    document.getElementById('subjects-data')!.textContent!
+  );
+  const subjectsMap = new Map(subjectsData.map(s => [s.id, s]));
+
   const modal = document.getElementById('subject-modal') as HTMLDialogElement;
   const modalBox = document.getElementById('modal-subject-box')!;
   const closeBtn = document.getElementById('close-modal-btn')!;
@@ -100,12 +111,28 @@ function getStageSubjects(stageId: string) {
 
   document.querySelectorAll('.subject-info-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
-      const card = (e.target as HTMLElement).closest('.subject')!;
-      const template = card.querySelector('template.modal-content') as HTMLTemplateElement;
-      // Clear previous content (keep close button)
+      const id = Number((e.target as HTMLElement).dataset.id);
+      const subject = subjectsMap.get(id);
+      if (!subject) return;
+
+      const resourcesHtml = subject.resources.map(r => {
+        const level = r.level ? `<span class="resource-level">[${r.level}]</span> ` : '';
+        const lang = r.language ? `<span class="resource-language">[${r.language}]</span> ` : '';
+        const title = r.url
+          ? `<a href="${r.url}" target="_blank" rel="noopener">${r.title}</a>`
+          : r.title;
+        const desc = r.description ? `. ${r.description}` : '';
+        return `<li>${level}${lang}${title}${desc}</li>`;
+      }).join('');
+
       modalBox.innerHTML = '';
       modalBox.appendChild(closeBtn);
-      modalBox.appendChild(template.content.cloneNode(true));
+      modalBox.insertAdjacentHTML('beforeend', `
+        <h3>${subject.title}</h3>
+        <p class="subject-description-modal">${subject.description}</p>
+        <h4>Материалы для изучения</h4>
+        <ul class="subject-resources">${resourcesHtml}</ul>
+      `);
       modal.showModal();
       e.stopPropagation();
     });

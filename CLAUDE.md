@@ -40,14 +40,19 @@
 
 ### Данные дисциплин
 - `src/content/subjects/*.md` — 26 Markdown-файлов, по одному на дисциплину
-- Frontmatter каждого файла: `id`, `title`, `image`, `stage`, `order`, `description`
-- Тело файла: раздел `## Материалы` со списком ресурсов в формате `[сложность] [название](url). описание`
-- `src/content.config.ts` — схема валидации коллекции
+- Frontmatter: `id`, `title`, `image`, `stage`, `order`, `description`, `resources[]`
+- Каждый ресурс: `level` (easy/medium/hard), `language` (ru/en/en/ru), `url`, `title`, `description` — все поля кроме `title` опциональны
+- `src/content.config.ts` — схема валидации всех коллекций
 
 ### Данные этапов
 - `src/content/stages/*.md` — 7 Markdown-файлов, по одному на этап
-- Frontmatter: `number`, `title`, `order`. Тело файла — описание этапа
-- Этап связывается с дисциплинами через имя файла (slug), совпадающее с полем `stage` в frontmatter дисциплины
+- Frontmatter: `stage_id`, `stage_name`, `title`, `order`, `description`
+- Связь с дисциплинами: `stage_id` этапа должен совпадать с полем `stage` у дисциплин
+
+### Полезные материалы
+- `src/content/materials/*.md` — 6 Markdown-файлов, по одному на раздел (Общее, Математика, Программирование и т.д.)
+- Frontmatter: `title`, `order`, `resources[]`, `articles[]`
+- Каждая запись: `url`, `title`, `description` (опционально)
 
 ### Компоненты
 - `src/layouts/BaseLayout.astro` — общая обёртка всех страниц (head, метатеги, Яндекс.Метрика)
@@ -55,9 +60,9 @@
 - `src/components/Footer.astro` — подвал с лицензией CC BY-SA 4.0
 
 ### Страницы
-- `src/pages/index.astro` — главная. Читает дисциплины через `getCollection('subjects')`, группирует по этапам, рендерит карточки и модальное окно
+- `src/pages/index.astro` — главная. Читает дисциплины через `getCollection('subjects')`, группирует по этапам, рендерит карточки и модальное окно. Данные для модала сериализуются в `<script type="application/json">`
 - `src/pages/roadmap.astro` — карта компетенций (картинка)
-- `src/pages/materials.astro` — список полезных материалов (статический контент)
+- `src/pages/materials.astro` — читает `getCollection('materials')`, рендерит разделы из структурированных данных
 - `src/pages/about.astro` — описание проекта
 
 ### Ресурсы

@@ -1,0 +1,32 @@
+---
+title: "Программирование"
+order: 3
+resources:
+  - url: "https://refactoring.guru/ru"
+    title: "Refactoring Guru"
+    description: "Описание основных паттернов проектирования"
+  - url: "https://gameprogrammingpatterns.com/"
+    title: "Паттерны проектирования в проектировании и программировании игр"
+  - url: "https://salmer.github.io/CppDeveloperRoadmap/"
+    title: "C++ Developer Roadmap"
+    description: "Дорожная карта развития C++ специалиста"
+  - url: "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+    title: "C++ Core Guidelines"
+articles:
+  - url: "https://habr.com/ru/articles/309796/"
+    title: "Оптимизация кода: процессор"
+  - url: "https://habr.com/ru/articles/312078/"
+    title: "Оптимизация кода: память"
+  - url: "https://habr.com/ru/articles/472052/"
+    title: "Data-Oriented Design"
+  - url: "https://habr.com/ru/companies/ruvds/articles/850474/"
+    title: "Почему важно оптимизировать формат данных"
+  - url: "https://habr.com/ru/articles/831754/"
+    title: "Обзор библиотек С++"
+  - url: "https://habr.com/ru/articles/112953/"
+    title: "Машинная арифметика с плавающей точкой"
+  - url: "https://habr.com/ru/companies/infopulse/articles/336110/"
+    title: "Быстрое вычисление обратного квадратного корня из Quake III Arena"
+  - url: "https://habr.com/ru/articles/123143/"
+    title: "Некоторые советы по программированию"
+---
