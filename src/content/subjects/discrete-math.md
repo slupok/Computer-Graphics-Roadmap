@@ -1,5 +1,4 @@
 ---
-id: 4
 title: "Дискретная математика"
 image: "/resources/subjects/discrete_math.png"
 stage: "base-math"

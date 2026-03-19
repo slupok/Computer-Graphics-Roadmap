@@ -1,5 +1,4 @@
 ---
-id: 3
 title: "Аналитическая геометрия"
 image: "/resources/subjects/default.png"
 stage: "base-math"

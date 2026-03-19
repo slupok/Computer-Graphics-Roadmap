@@ -1,5 +1,4 @@
 ---
-id: 8
 title: "Основы цифровой обработки изображений"
 image: "/resources/subjects/default.png"
 stage: "base-cg"

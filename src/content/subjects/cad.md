@@ -1,5 +1,4 @@
 ---
-id: 19
 title: "Системы автоматизированного проектирования"
 image: "/resources/subjects/default.png"
 stage: "highly-specialized"

@@ -1,5 +1,4 @@
 ---
-id: 15
 title: "Методы оптимизаций"
 image: "/resources/subjects/default.png"
 stage: "advanced"

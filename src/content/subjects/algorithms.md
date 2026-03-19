@@ -1,5 +1,4 @@
 ---
-id: 7
 title: "Алгоритмы и структуры данных"
 image: "/resources/subjects/alg.png"
 stage: "base-cs"

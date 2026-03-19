@@ -1,5 +1,4 @@
 ---
-id: 23
 title: "Дифференциальные уравнения"
 image: "/resources/subjects/default.png"
 stage: "additional-skills"

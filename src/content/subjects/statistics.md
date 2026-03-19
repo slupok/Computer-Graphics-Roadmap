@@ -1,5 +1,4 @@
 ---
-id: 5
 title: "Теория вероятностей и математическая статистика"
 image: "/resources/subjects/prob_and_stat.png"
 stage: "base-math"

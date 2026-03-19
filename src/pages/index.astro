@@ -54,7 +54,7 @@ function getStageSubjects(stageId: string) {
                 <img class="subject-image-preview" src={subject.data.image} alt={subject.data.title} />
                 <h3>{subject.data.title}</h3>
                 <p style="white-space: pre-line">{subject.data.description}</p>
-                <button class="subject-info-btn" data-id={subject.data.id}>Подробнее</button>
+                <button class="subject-info-btn" data-id={subject.id}>Подробнее</button>
               </div>
             ))}
           </div>
@@ -74,7 +74,7 @@ function getStageSubjects(stageId: string) {
 
 <script type="application/json" id="subjects-data" set:html={JSON.stringify(
   allSubjects.map(s => ({
-    id: s.data.id,
+    id: s.id,
     title: s.data.title,
     description: s.data.description,
     resources: s.data.resources,
@@ -90,7 +90,7 @@ function getStageSubjects(stageId: string) {
     description?: string;
   }
   interface SubjectData {
-    id: number;
+    id: string;
     title: string;
     description: string;
     resources: Resource[];
@@ -111,7 +111,7 @@ function getStageSubjects(stageId: string) {
 
   document.querySelectorAll('.subject-info-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
-      const id = Number((e.target as HTMLElement).dataset.id);
+      const id = (e.target as HTMLElement).dataset.id!;
       const subject = subjectsMap.get(id);
       if (!subject) return;
 

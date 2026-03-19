@@ -8,7 +8,6 @@
 
 ```markdown
 ---
-id: 27
 title: "Название дисциплины"
 image: "/resources/subjects/image.png"
 stage: "advanced"
@@ -30,7 +29,6 @@ resources:
 ```
 
 **Поля дисциплины:**
-- `id` — уникальный номер (возьми следующий по порядку)
 - `stage` — к какому этапу относится (см. ниже)
 - `order` — порядок отображения внутри этапа
 - `image` — путь к картинке из папки `public/resources/subjects/`

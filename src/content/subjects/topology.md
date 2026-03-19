@@ -1,5 +1,4 @@
 ---
-id: 24
 title: "Топологический анализ и топология"
 image: "/resources/subjects/default.png"
 stage: "additional-skills"

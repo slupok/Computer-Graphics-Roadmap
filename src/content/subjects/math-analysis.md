@@ -1,5 +1,4 @@
 ---
-id: 1
 title: "Математический анализ"
 image: "/resources/subjects/math.png"
 stage: "base-math"

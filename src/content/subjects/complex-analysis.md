@@ -1,5 +1,4 @@
 ---
-id: 21
 title: "Комплексный анализ"
 image: "/resources/subjects/default.png"
 stage: "additional-skills"

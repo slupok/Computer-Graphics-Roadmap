@@ -1,5 +1,4 @@
 ---
-id: 20
 title: "Функциональный анализ"
 image: "/resources/subjects/default.png"
 stage: "additional-skills"
