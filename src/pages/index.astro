@@ -59,6 +59,7 @@ function getRendered(stageId: string) {
               <div class="subject">
                 <img class="subject-image-preview" src={subject.data.image} alt={subject.data.title} />
                 <h3>{subject.data.title}</h3>
+                <p style="white-space: pre-line">{subject.data.description}</p>
                 <button class="subject-info-btn" data-id={subject.data.id}>Подробнее</button>
                 <template class="modal-content">
                   <h3>{subject.data.title}</h3>
