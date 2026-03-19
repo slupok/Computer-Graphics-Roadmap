@@ -5,9 +5,13 @@ image: "/resources/subjects/default.png"
 stage: "advanced"
 order: 4
 description: "Оптимизация в математике — задача нахождения экстремума (минимума или максимума) целевой функции в некоторой области конечномерного векторного пространства. Методы оптимизаций играют вазжейшую роль в машинном обучении, именно на этих методах основаны все алгоритмы обучения"
+resources:
+  - language: ru
+    url: "https://csspace.io/course/2025fall-lin-opt"
+    title: "Линейная оптимизация"
+    description: "Лекции CS Space (не проверено)"
+  - language: ru
+    url: "https://csspace.io/course/2025spring-opt"
+    title: "Нелинейная оптимизация"
+    description: "Лекции СS Space (не проверено)"
 ---
-
-## Материалы
-
-- [ru] [Линейная оптимизация](https://csspace.io/course/2025fall-lin-opt). Лекции CS Space (не проверено)
-- [ru] [Нелинейная оптимизация](https://csspace.io/course/2025spring-opt). Лекции СS Space (не проверено)

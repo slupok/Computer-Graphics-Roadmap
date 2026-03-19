@@ -10,7 +10,23 @@ const subjects = defineCollection({
     stage: z.string(),
     order: z.number(),
     description: z.string(),
+    resources: z.array(z.object({
+      level: z.enum(['easy', 'medium', 'hard']).optional(),
+      language: z.enum(['ru', 'en', 'en/ru']).optional(),
+      url: z.string().optional(),
+      title: z.string(),
+      description: z.string().optional(),
+    })).default([]),
   }),
 });
 
-export const collections = { subjects };
+const stages = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/stages' }),
+  schema: z.object({
+    number: z.string(),
+    title: z.string(),
+    order: z.number(),
+  }),
+});
+
+export const collections = { subjects, stages };
