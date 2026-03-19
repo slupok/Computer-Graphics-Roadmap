@@ -2,23 +2,16 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { getCollection, render } from 'astro:content';
-import { stages } from '../data/stages';
+import { getCollection } from 'astro:content';
 
 const allSubjects = await getCollection('subjects');
+const allStages = await getCollection('stages');
+const stages = allStages.sort((a, b) => a.data.order - b.data.order);
 
-// Pre-render each subject's content
-const renderedSubjects = await Promise.all(
-  allSubjects.map(async (subject) => {
-    const { Content } = await render(subject);
-    return { subject, Content };
-  })
-);
-
-function getRendered(stageId: string) {
-  return renderedSubjects
-    .filter(r => r.subject.data.stage === stageId)
-    .sort((a, b) => a.subject.data.order - b.subject.data.order);
+function getStageSubjects(stageId: string) {
+  return allSubjects
+    .filter(s => s.data.stage === stageId)
+    .sort((a, b) => a.data.order - b.data.order);
 }
 ---
 <BaseLayout title="Computer Graphics Roadmap">
@@ -47,15 +40,15 @@ function getRendered(stageId: string) {
         <div id={stage.id} class="section">
           <div class="level-about">
             <div class="level-header">
-              <p class="level-number">{stage.number}</p>
-              <h2>{stage.title}</h2>
+              <p class="level-number">{stage.data.number}</p>
+              <h2>{stage.data.title}</h2>
             </div>
             <div class="level-describe">
-              <p>{stage.description}</p>
+              <p>{stage.body}</p>
             </div>
           </div>
           <div class="subjects-list">
-            {getRendered(stage.id).map(({ subject, Content }) => (
+            {getStageSubjects(stage.id).map(subject => (
               <div class="subject">
                 <img class="subject-image-preview" src={subject.data.image} alt={subject.data.title} />
                 <h3>{subject.data.title}</h3>
@@ -64,7 +57,20 @@ function getRendered(stageId: string) {
                 <template class="modal-content">
                   <h3>{subject.data.title}</h3>
                   <div class="subject-description-modal">{subject.data.description}</div>
-                  <Content />
+                  <h4>Материалы для изучения</h4>
+                  <ul class="subject-resources">
+                    {subject.data.resources.map(resource => (
+                      <li>
+                        {resource.level && <span class="resource-level">[{resource.level}]</span>}
+                        {resource.language && <span class="resource-language">[{resource.language}]</span>}
+                        {' '}
+                        {resource.url
+                          ? <a href={resource.url} target="_blank" rel="noopener">{resource.title}</a>
+                          : resource.title}
+                        {resource.description && <>. {resource.description}</>}
+                      </li>
+                    ))}
+                  </ul>
                 </template>
               </div>
             ))}

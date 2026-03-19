@@ -5,8 +5,5 @@ image: "/resources/subjects/default.png"
 stage: "highly-specialized"
 order: 4
 description: "Скоро будет описание..."
+resources: []
 ---
-
-## Материалы
-
-- Скоро будут материалы...
