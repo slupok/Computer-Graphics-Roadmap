@@ -14,17 +14,17 @@ stage: "advanced"
 order: 6
 description: "Описание дисциплины."
 resources:
-  - level: easy
+  - title: "Название ресурса"
+    description: "Краткое описание"
+    url: "https://url.com"
+    level: easy
     language: en
-    url: "https://url.com"
-    title: "Название ресурса"
+  - title: 'Автор "Название книги"'
     description: "Краткое описание"
-  - level: medium
-    title: 'Автор "Название книги"'
-    description: "Краткое описание"
-  - level: hard
+    level: medium
+  - title: "Название"
     url: "https://url.com"
-    title: "Название"
+    level: hard
 ---
 ```
 
@@ -34,11 +34,11 @@ resources:
 - `image` — путь к картинке из папки `public/resources/subjects/`
 
 **Поля ресурса:**
-- `level` — сложность: `easy`, `medium`, `hard` (опционально)
-- `language` — язык: `ru`, `en`, `en/ru` (опционально)
-- `url` — ссылка (опционально)
 - `title` — название ресурса или книги
 - `description` — краткое описание (опционально)
+- `url` — ссылка (опционально)
+- `level` — сложность: `easy`, `medium`, `hard` (опционально)
+- `language` — язык: `ru`, `en`, `en/ru` (опционально)
 
 **Совет:** если `title` содержит двойные кавычки `"` — оберни его в одинарные: `title: 'Автор "Книга"'`
 

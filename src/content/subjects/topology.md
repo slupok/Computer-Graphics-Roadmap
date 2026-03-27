@@ -5,11 +5,11 @@ stage: "additional-skills"
 order: 6
 description: "Скоро будет описание..."
 resources:
-  - language: ru
+  - title: "Что такое топологический анализ данных"
     url: "https://www.youtube.com/playlist?list=PLKXEsFnBcT5BD47xO19UsKshsQ7DMU3Sa"
-    title: "Что такое топологический анализ данных"
-  - language: ru
-    url: "https://stepik.org/course/75311/promo"
-    title: "Теория гомологий"
+    language: ru
+  - title: "Теория гомологий"
     description: "Курс на stepik"
+    url: "https://stepik.org/course/75311/promo"
+    language: ru
 ---
