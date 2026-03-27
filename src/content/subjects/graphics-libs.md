@@ -28,16 +28,16 @@ resources:
   - language: en
     url: "https://www.3dgep.com/learning-directx-12-1/"
     title: "DirectX tutorial"
-    description: "Серия уровков по DorectX"
+    description: "Серия уроков по DirectX"
   - language: en
     url: "https://github.com/microsoft/DirectX-Graphics-Samples"
     title: "DirectX Graphics Samples"
     description: "Официальные примеры кода DirectX"
   - language: en
     url: "https://learnopengl.com/Introduction"
-    title: "Lern OpenGL"
+    title: "Learn OpenGL"
     description: "Обучающий материал по OpenGL"
   - language: en/ru
     title: 'Джейсон Грегори "Игровой движок. Программирование и внутреннее устройство"'
-    description: "Бестселлер, лучшая книга про проектирование игровых движков. Говорят, в рускоязычном издании иллюстрации черно-белые"
+    description: "Бестселлер, лучшая книга про проектирование игровых движков. Говорят, в русскоязычном издании иллюстрации черно-белые"
 ---
