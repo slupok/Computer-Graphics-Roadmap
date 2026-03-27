@@ -78,13 +78,13 @@ order: 8
 title: "Название раздела"
 order: 7
 resources:
-  - url: "https://url.com"
-    title: "Название ресурса"
+  - title: "Название ресурса"
     description: "Краткое описание"
+    url: "https://url.com"
 articles:
-  - url: "https://url.com"
-    title: "Название статьи"
+  - title: "Название статьи"
     description: "Краткое описание"
+    url: "https://url.com"
 ---
 ```
 
