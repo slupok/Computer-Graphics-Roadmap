@@ -1,5 +1,5 @@
 ---
-title: "Обработка и визуализация томмографических данных"
+title: "Обработка и визуализация томографических данных"
 image: "/resources/subjects/default.png"
 stage: "highly-specialized"
 order: 1
