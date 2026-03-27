@@ -38,10 +38,10 @@ function getStageSubjects(stageId: string) {
   <div class="content">
     <div id="levels">
       {stages.map(stage => (
-        <div id={stage.data.stage_id} class="section">
+        <div id={stage.data.id} class="section">
           <div class="level-about">
             <div class="level-header">
-              <p class="level-number">{stage.data.stage_name}</p>
+              <p class="level-number">{stage.data.stage}</p>
               <h2>{stage.data.title}</h2>
             </div>
             <div class="level-describe">
@@ -49,7 +49,7 @@ function getStageSubjects(stageId: string) {
             </div>
           </div>
           <div class="subjects-list">
-            {getStageSubjects(stage.data.stage_id).map(subject => (
+            {getStageSubjects(stage.data.id).map(subject => (
               <div class="subject">
                 <img class="subject-image-preview" src={subject.data.image} alt={subject.data.title} />
                 <h3>{subject.data.title}</h3>

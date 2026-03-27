@@ -22,11 +22,11 @@ const subjects = defineCollection({
 const stages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/stages' }),
   schema: z.object({
-    stage_id: z.string(),
-    stage_name: z.string(),
+    id: z.string(),
+    stage: z.string(),
     title: z.string(),
-    order: z.number(),
     description: z.string(),
+    order: z.number(),
   }),
 });
 
