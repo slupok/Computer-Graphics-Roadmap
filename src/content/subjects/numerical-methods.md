@@ -7,23 +7,23 @@ description: "Численные методы изучают алгоритмы,
 resources:
   - title: 'Бахвалов Н.С., Жидков Н.П., Кобельков Г.М. "Численные методы"'
     description: "Классический университетский учебник"
-  - language: en
-    title: 'William H. Press and others "Numerical Recipes"'
+  - title: 'William H. Press and others "Numerical Recipes"'
     description: "Сборник алгоритмов численных методов"
-  - language: ru
+    language: en
+  - title: "Численные методы. Часть 1"
+    description: "Лекции МехМата МГУ. Лектор также соавтор популярной одноименной книги"
     url: "https://teach-in.ru/course/numerical-methods-part-1"
-    title: "Численные методы. Часть 1"
+    language: ru
+  - title: "Численные методы. Часть 2"
     description: "Лекции МехМата МГУ. Лектор также соавтор популярной одноименной книги"
-  - language: ru
     url: "https://teach-in.ru/course/numerical-methods-part-2"
-    title: "Численные методы. Часть 2"
-    description: "Лекции МехМата МГУ. Лектор также соавтор популярной одноименной книги"
-  - language: ru
+    language: ru
+  - title: "Численные методы. Семинары. Часть 1"
+    description: "Семинары МехМата МГУ. Лектор также соавтор популярной одноименной книги"
     url: "https://teach-in.ru/course/numerical-methods-part-1-seminars-kobelkov"
-    title: "Численные методы. Семинары. Часть 1"
+    language: ru
+  - title: "Численные методы. Семинары. Часть 2"
     description: "Семинары МехМата МГУ. Лектор также соавтор популярной одноименной книги"
-  - language: ru
     url: "https://teach-in.ru/course/numerical-methods-part-2-seminars-kobelkov"
-    title: "Численные методы. Семинары. Часть 2"
-    description: "Семинары МехМата МГУ. Лектор также соавтор популярной одноименной книги"
+    language: ru
 ---
