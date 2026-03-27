@@ -26,10 +26,6 @@ resources:
     title: "Ray Tracing in One Weekend"
     description: "Серия обучающих материалов по трассировке лучей"
   - language: en
-    url: "https://pbr-book.org/"
-    title: "Physically Based Rendering: From Theory To Implementation"
-    description: "Онлайн-книга по реализации PBR рендер. Практико-ориентированная подача материала, но чрезчур последовательная структура, поэтому ее трудно использовать как справочник"
-  - language: en
     url: "https://www.scratchapixel.com/index.html"
     title: "Scratchapixel"
     description: "Сборник обучающих материалов программированию компьютерной графики, приятное повествование"
@@ -38,5 +34,10 @@ resources:
     description: "Одна из фундаментальных книг по КГ, описывающая академическим языком аспекты математических основ КГ"
   - language: en
     title: 'Tomas Akenine-Moller "Real-Time Rendering"'
-    description: "Часто советовали эту книгу для начинающих в интернете"
+    description: "В интернете часто советовали эту книгу для начинающих"
+  - language: en
+    url: "https://momentsingraphics.de/ToyRendererOverview.html"
+    title: "Теория в заметках по реализации рендера на Vulkan (блог Moments in Graphics)"
+
+
 ---
