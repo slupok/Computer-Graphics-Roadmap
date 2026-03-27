@@ -3,7 +3,7 @@ title: "Вычисления на видеокартах (GPGPU)"
 image: "/resources/subjects/default.png"
 stage: "advanced"
 order: 1
-description: "Вычисления на графических процессорах - методика использование графического процессора видеокарты для математических вычислений.\n В основном выделяют технологии: CUDA (NVidia devices), OpenCL (most devices), Metal (Apple devices), ROCm (AMD devices)"
+description: "Вычисления на графических процессорах — методика использование графического процессора видеокарты для математических вычислений.\n В основном выделяют технологии: CUDA (NVidia devices), OpenCL (most devices), Metal (Apple devices), ROCm (AMD devices)"
 resources:
   - language: ru
     url: "https://www.youtube.com/playlist?list=PLlb7e2G7aSpSptbl_yI5uvMlpRc1mwsCL"

@@ -3,7 +3,7 @@ title: "Физически корректный рендеринг"
 image: "/resources/subjects/default.png"
 stage: "advanced"
 order: 5
-description: "Physically based rendering (PBR) - это метод компьютерной графики, который позволяет рендерить фотореалистичные изображения."
+description: "Physically based rendering (PBR) — это метод компьютерной графики, который позволяет рендерить фотореалистичные изображения."
 resources:
   - language: en
     url: "https://pbr-book.org/"
