@@ -35,6 +35,10 @@ resources:
   - title: 'Fletcher Dunn and Ian Parberry "3D Math Primer for Graphics and Game Development"'
     description: "Хорошая книга с практическими примерами"
     language: en
+  - title: "3D Math Primer for Graphics and Game Development"
+    description: "(не проверено)"
+    url: "https://gamemath.com/"
+    language: en
   - title: 'Tomas Akenine-Moller "Real-Time Rendering"'
     description: "В интернете часто советовали эту книгу для начинающих"
     language: en
