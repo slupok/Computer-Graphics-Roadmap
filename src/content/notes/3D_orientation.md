@@ -136,6 +136,25 @@ v'   &= (v'_x, v'_y, v'_z)
 \end{align*}
 $$
 
+Реализация:
+```C++
+Vector3 QuanRotation(Vector3 v, Quaternion q)
+{
+        float u0 = v.x * q.x + v.y * q.y + v.z * q.z;
+        float u1 = v.x * q.w - v.y * q.z + v.z * q.y;
+        float u2 = v.x * q.z + v.y * q.w - v.z * q.x;
+        float u3 = -v.x * q.y + v.y * q.x + v.z * q.w;
+        Quaternion M = new Quaternion(u1, u2, u3, u0);
+        
+        Vector3 resultVector;
+        resultVector.x = q.w * M.x + q.x * M.w + q.y * M.z - q.z * M.y;  
+        resultVector.y = q.w * M.y - q.x * M.z + q.y * M.w + q.z * M.x;
+        resultVector.z = q.w * M.z + q.x * M.y - q.y * M.x + q.z * M.w;
+        
+        return resultVector;
+}
+```
+
 ## Продолжение...
 
 ...
