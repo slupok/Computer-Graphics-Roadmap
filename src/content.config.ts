@@ -46,4 +46,14 @@ const materials = defineCollection({
   }),
 });
 
-export const collections = { subjects, stages, materials };
+const notes = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/notes' }),
+  schema: z.object({
+    title: z.string(),
+    date: z.string().optional(),
+    description: z.string().optional(),
+    tags: z.array(z.string()).optional(),
+  }),
+});
+
+export const collections = { subjects, stages, materials, notes };
