@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const allNotes = await getCollection('notes');
+
+const tag = Astro.url.searchParams.get('tag');
+
+const notes = allNotes
+  .filter(n => !tag || (n.data.tags ?? []).includes(tag))
+  .sort((a, b) => {
+    if (a.data.date && b.data.date) return b.data.date.localeCompare(a.data.date);
+    if (a.data.date) return -1;
+    if (b.data.date) return 1;
+    return a.data.title.localeCompare(b.data.title);
+  });
+---
+<BaseLayout title="Заметки — Computer Graphics Roadmap">
+  <Header />
+
+  <div id="notes" class="content">
+    <div class="notes-header">
+      <h1>Заметки</h1>
+      {tag && (
+        <div class="tag-filter">
+          Фильтр: <span class="tag active">{tag}</span>
+          <a href="/notes" class="clear-filter">✕ сбросить</a>
+        </div>
+      )}
+    </div>
+
+    {notes.length === 0 && (
+      <p class="empty">Заметок с тегом «{tag}» не найдено.</p>
+    )}
+
+    <ul class="notes-list">
+      {notes.map(note => (
+        <li class="note-card">
+          <a href={`/notes/${note.id}`} class="note-title">{note.data.title}</a>
+          {note.data.date && <time class="note-date">{note.data.date}</time>}
+          {note.data.description && <p class="note-desc">{note.data.description}</p>}
+          {(note.data.tags ?? []).length > 0 && (
+            <div class="note-tags">
+              {(note.data.tags ?? []).map(t => (
+                <a href={`/notes?tag=${encodeURIComponent(t)}`} class={`tag${t === tag ? ' active' : ''}`}>{t}</a>
+              ))}
+            </div>
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .notes-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  .notes-header h1 {
+    margin: 0;
+  }
+  .tag-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .clear-filter {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+  .clear-filter:hover {
+    color: #333;
+  }
+  .notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .note-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .note-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+  }
+  .note-title:hover {
+    text-decoration: underline;
+  }
+  .note-date {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  .note-desc {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  .note-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.25rem;
+  }
+  .tag {
+    font-size: 0.78rem;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    background: #f0f0f0;
+    color: #444;
+    text-decoration: none;
+    border: 1px solid #ddd;
+  }
+  .tag:hover, .tag.active {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+  }
+  .empty {
+    color: #888;
+  }
+</style>

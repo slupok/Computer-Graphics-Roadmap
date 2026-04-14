@@ -1,0 +1,170 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const notes = await getCollection('notes');
+  return notes.map(note => ({
+    params: { slug: note.id },
+    props: { note },
+  }));
+}
+
+const { note } = Astro.props;
+const { Content } = await render(note);
+---
+<BaseLayout title={`${note.data.title} — Заметки`}>
+  <Header />
+
+  <div class="content note-page">
+    <nav class="breadcrumb"><a href="/notes">← Заметки</a></nav>
+
+    <h1>{note.data.title}</h1>
+
+    <div class="note-meta">
+      {note.data.date && <time class="note-date">{note.data.date}</time>}
+      {(note.data.tags ?? []).length > 0 && (
+        <div class="note-tags">
+          {(note.data.tags ?? []).map(t => (
+            <a href={`/notes?tag=${encodeURIComponent(t)}`} class="tag">{t}</a>
+          ))}
+        </div>
+      )}
+    </div>
+
+    <article class="note-body">
+      <Content />
+    </article>
+  </div>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .note-page {
+    max-width: 800px;
+  }
+  .breadcrumb {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .breadcrumb a {
+    color: #888;
+    text-decoration: none;
+  }
+  .breadcrumb a:hover {
+    color: #333;
+    text-decoration: underline;
+  }
+  .note-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  .note-date {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  .note-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .tag {
+    font-size: 0.78rem;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    background: #f0f0f0;
+    color: #444;
+    text-decoration: none;
+    border: 1px solid #ddd;
+  }
+  .tag:hover {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+  }
+  .note-body {
+    line-height: 1.7;
+  }
+  .note-body :global(.katex-display) {
+    text-align: left;
+  }
+  .note-body :global(h1) { font-size: 1.6rem; margin-top: 2rem; }
+  .note-body :global(h2) { font-size: 1.35rem; margin-top: 2rem; }
+  .note-body :global(h3) { font-size: 1.15rem; margin-top: 1.5rem; }
+  .note-body :global(h4) { font-size: 1rem; margin-top: 1.25rem; }
+  .note-body :global(pre) {
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+  }
+  .note-body :global(code) {
+    font-family: monospace;
+    font-size: 0.9em;
+  }
+  .note-body :global(p code) {
+    background: #f0f0f0;
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+  }
+
+  /* Callouts (GitHub-style > [!NOTE], > [!WARNING], etc.) */
+  .note-body :global(.markdown-alert) {
+    border-left: 4px solid;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    margin: 1.25rem 0;
+  }
+  .note-body :global(.markdown-alert-title) {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .note-body :global(.markdown-alert p:last-child) {
+    margin-bottom: 0;
+  }
+  .note-body :global(.markdown-alert-note) {
+    border-color: #4493f8;
+    background: #dbeafe22;
+  }
+  .note-body :global(.markdown-alert-note .markdown-alert-title) {
+    color: #4493f8;
+  }
+  .note-body :global(.markdown-alert-tip) {
+    border-color: #3fb950;
+    background: #dcfce722;
+  }
+  .note-body :global(.markdown-alert-tip .markdown-alert-title) {
+    color: #3fb950;
+  }
+  .note-body :global(.markdown-alert-important) {
+    border-color: #a371f7;
+    background: #f3e8ff22;
+  }
+  .note-body :global(.markdown-alert-important .markdown-alert-title) {
+    color: #a371f7;
+  }
+  .note-body :global(.markdown-alert-warning) {
+    border-color: #d29922;
+    background: #fef9c322;
+  }
+  .note-body :global(.markdown-alert-warning .markdown-alert-title) {
+    color: #d29922;
+  }
+  .note-body :global(.markdown-alert-caution) {
+    border-color: #f85149;
+    background: #fee2e222;
+  }
+  .note-body :global(.markdown-alert-caution .markdown-alert-title) {
+    color: #f85149;
+  }
+</style>
