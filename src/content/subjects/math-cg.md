@@ -32,11 +32,8 @@ resources:
   - title: 'Eric Lengyel "Mathematics for 3D Game Programming and Computer Graphics"'
     description: "Одна из фундаментальных книг по КГ, описывающая академическим языком аспекты математических основ КГ"
     language: en
-  - title: 'Fletcher Dunn and Ian Parberry "3D Math Primer for Graphics and Game Development"'
+  - title: 'Fletcher Dunn and Ian Parberry "3D Math Primer for Graphics and Game Development" 2nd Edition'
     description: "Хорошая книга с практическими примерами"
-    language: en
-  - title: "3D Math Primer for Graphics and Game Development"
-    description: "(не проверено)"
     url: "https://gamemath.com/"
     language: en
   - title: 'Tomas Akenine-Moller "Real-Time Rendering"'
