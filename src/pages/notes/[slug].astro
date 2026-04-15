@@ -94,6 +94,15 @@ const { Content } = await render(note);
   .note-body :global(.katex-display) {
     text-align: left;
   }
+  .note-body :global(.katex-display > .katex) {
+    text-align: left;
+  }
+  .note-body :global(.math-center) {
+    text-align: center;
+  }
+  .note-body :global(.math-center .katex-display > .katex) {
+    text-align: center;
+  }
   .note-body :global(h1) { font-size: 1.6rem; margin-top: 2rem; }
   .note-body :global(h2) { font-size: 1.35rem; margin-top: 2rem; }
   .note-body :global(h3) { font-size: 1.15rem; margin-top: 1.5rem; }

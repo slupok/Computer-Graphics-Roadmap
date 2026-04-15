@@ -14,6 +14,8 @@
   "dependencies": {
     "astro": "^6.0.7",
     "rehype-katex": "^7.0.1",
+    "remark-breaks": "^4.0.0",
+    "remark-directive": "^4.0.0",
     "remark-github-blockquote-alert": "^2.1.0",
     "remark-math": "^6.0.0"
   }
