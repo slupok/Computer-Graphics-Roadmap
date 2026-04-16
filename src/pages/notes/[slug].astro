@@ -24,7 +24,7 @@ const { Content } = await render(note);
     <h1>{note.data.title}</h1>
 
     <div class="note-meta">
-      {note.data.date && <time class="note-date">{note.data.date}</time>}
+      {note.data.date && <time class="note-date">{note.data.date.split('-').reverse().join('-')}</time>}
       {(note.data.tags ?? []).length > 0 && (
         <div class="note-tags">
           {(note.data.tags ?? []).map(t => (

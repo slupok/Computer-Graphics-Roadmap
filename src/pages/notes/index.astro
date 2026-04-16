@@ -39,7 +39,7 @@ const notes = allNotes
       {notes.map(note => (
         <li class="note-card">
           <a href={`/notes/${note.id}`} class="note-title">{note.data.title}</a>
-          {note.data.date && <time class="note-date">{note.data.date}</time>}
+          {note.data.date && <time class="note-date">{note.data.date.split('-').reverse().join('-')}</time>}
           {note.data.description && <p class="note-desc">{note.data.description}</p>}
           {(note.data.tags ?? []).length > 0 && (
             <div class="note-tags">
