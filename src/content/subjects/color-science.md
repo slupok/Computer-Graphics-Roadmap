@@ -1,5 +1,5 @@
 ---
-title: "Колорометрия"
+title: "Колориметрия"
 image: "/resources/subjects/default.png"
 stage: "highly-specialized"
 order: 3
@@ -12,15 +12,15 @@ resources:
     url: "https://www.colour-science.org/"
     language: en
   - title: "Цветовая вычислительная фотография. Часть 1: Теория цвета"
-    description: "Доступное введение в колорометрию"
+    description: "Доступное введение в колориметрию"
     url: "https://habr.com/ru/companies/airi/articles/901284/"
     language: ru
   - title: "Цветовая вычислительная фотография. Часть 2: Стандарты CIE 1931"
-    description: "Доступное введение в колорометрию"
+    description: "Доступное введение в колориметрию"
     url: "https://habr.com/ru/companies/airi/articles/916116/"
     language: ru
   - title: "Цветовая вычислительная фотография. Часть 3: За границами стандарта CIE 1931"
-    description: "Доступное введение в колорометрию"
+    description: "Доступное введение в колориметрию"
     url: "https://habr.com/ru/companies/airi/articles/954982/"
     language: ru
 ---
