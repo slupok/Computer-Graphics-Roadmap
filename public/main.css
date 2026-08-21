@@ -191,8 +191,16 @@ button:hover {
     display: block;
 }
 
+.about-img > .shader-canvas {
+    max-width: 70%;
+}
+
 @media screen and (max-width: 768px) {
     .about-img > img {
+        max-width: 80%;
+    }
+
+    .about-img > .shader-canvas {
         max-width: 80%;
     }
 }

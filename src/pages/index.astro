@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
+import ShaderCanvas from '../components/ShaderCanvas.astro';
+import { shaders } from '../shaders';
 
 const allSubjects = await getCollection('subjects');
 const allStages = await getCollection('stages');
@@ -30,7 +32,12 @@ function getStageSubjects(stageId: string) {
         </p>
       </div>
       <div class="about-img">
-        <img src="/resources/Euclid.png" alt="Euclid" />
+        <ShaderCanvas
+          shaders={shaders}
+          aspect="1 / 1"
+          fallback="/resources/Euclid.png"
+          label="Шейдер"
+        />
       </div>
     </div>
   </div>
